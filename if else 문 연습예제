@@ -1,0 +1,43 @@
+using system;
+class program
+{
+        static void Main(string[] args)
+        {
+            //원하는 타이밍에 명령 집어넣기(제어문)
+            //만약에 체력이 0이거나 0보다 작다면, 게임 오버를 출력한다.
+            int hp = 50;
+            if (hp <= 0)
+            {
+                Console.WriteLine("Game Over");
+            }
+            //그렇지 않다면, 체력을 출력하겠습니다.
+            else
+            {
+                Console.WriteLine(hp);
+
+            }
+            //만약에 입력한 숫자가 1일경우, 직업은 전사가 됩니다.
+            int number = int.Parse(Console.ReadLine());
+            string job = null;
+
+            if(number == 1)
+            {
+                job = "전사";
+
+            }
+            else if(number == 2)
+            {
+                job = "도적";
+            }
+            else if (number == 3)
+            {
+                job = "궁수";
+            }
+            else
+            {
+                job = "초보자";
+            }
+            Console.WriteLine("고른 직업은 " + job);
+
+        }
+}
