@@ -1,0 +1,135 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region 할당 대입 연산
+            /*
+            int a = 90;
+            int b = 90;
+            int c = 10;
+            int d = 20;
+            int e = 30;
+            int f = 2;
+            a = a + 10;
+            a += 10;
+            b -= 10;
+            c *= 2;
+            d /= 10;
+            e %= 4;
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"b = {b}");
+            Console.WriteLine($"c = {c}");
+            Console.WriteLine($"d = {d}");
+            Console.WriteLine($"e = {e}");*/
+            #endregion
+
+            #region 증감 연산
+            /*
+            int a = 1;
+            Console.WriteLine($"a={a}");
+            Console.WriteLine($"++a ={++a}");
+            Console.WriteLine($"a++ ={a++}");
+            Console.WriteLine($"a={a}");
+
+            int b = 2;
+            int sum = a + b;
+            Console.WriteLine($"a + b = {a + b}");
+            Console.WriteLine($"a + ++b = {a + ++b}");
+            Console.WriteLine($"a + b++ = {a + b++}");
+            Console.WriteLine($"b = {b}");
+            Console.WriteLine($"--b = {--b}");
+            Console.WriteLine($"b-- = {b--}");
+            Console.WriteLine($"b = {b}");
+            int a = 8;
+            int b = 0, c = 0, d = 0, e = 0;
+            b = a++;
+            Console.WriteLine("b = " + b);
+            c = ++a;
+            d = a--;
+            e = --a;
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("a++ = " + b);
+            Console.WriteLine("++a = " + c);
+            Console.WriteLine("a-- = " + d);
+            Console.WriteLine("--a = " + e);
+            Console.ReadLine();
+            */
+            #endregion
+
+            #region 비교 연산
+            /* 2항연산자
+            int a = 20;
+            int b = 20;
+            //bool result = a > b;
+            Console.WriteLine($"a>b = {a>b}");
+            Console.WriteLine($"a>b = {a < b}");
+            Console.WriteLine($"a>=b = {a >= b}");
+            Console.WriteLine($"a<=b = {a <= b}");
+            Console.WriteLine($"a==b = {a == b}");
+            Console.WriteLine($"a!=b = {a != b}");
+            Console.WriteLine($"a=b = {a = b}");
+            
+            3항연산자
+            int a = 1, b = 2;
+            string right = "정답", wrong = "오답";
+            bool value = a > b;
+            string answer;
+            answer = value ? right : wrong; // 
+            Console.WriteLine(answer);
+            
+            Console.WriteLine("키를 입력하세요.");
+            int height;
+            height = Convert.ToInt32(Console.ReadLine());
+            //var = 연산자를 알아서 정해줌
+            var answer = (height >= 130) ? "탑승가능" : "보호자 동반";
+            Console.WriteLine(answer);
+            Console.WriteLine(answer.GetType());
+            
+            Console.WriteLine("숫자를 입력하세요.");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int answer;
+            answer = num < 0 ? -(num) : num;
+            Console.WriteLine($"{num}의 절대값: {answer}");
+            */
+
+            #endregion
+
+            #region 논리 연산
+            //And, Or, Xor, Not
+            //And = && : 모두 true일 경우에만 true
+            //Or = || : 하나라도 true면 true
+            //Xor = ^  : 하나만 true 일 경우에만 true
+            //Not = !  : true 면 false, false면 true
+            /* bool x, y;
+             x = 10 > 0;
+             y = 10 < 0;
+             Console.WriteLine($"x && y = {x && y}");
+             Console.WriteLine($"x || y = {x || y}");
+             Console.WriteLine($"!x = {!x}");
+            Console.WriteLine("a값 입력");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("b값 입력");
+            int b = Convert.ToInt32(Console.ReadLine());
+            bool answer = (a != 100) || (b != 200);
+            bool result = answer ? true : false;
+            Console.WriteLine($"{a != 100 || b != 200}");*/
+
+
+
+
+
+
+
+
+
+            #endregion
+
+
+        }
+    }
+}
