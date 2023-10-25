@@ -1,0 +1,13 @@
+using System;
+class program
+{
+ static void Main(string[] args)
+{
+        int a = 0;
+        do
+        {
+            Console.Write("숫자 입력 0=종료");
+            a = int.Parse(Console.ReadLine());
+        } while (a != 0);
+}
+}
