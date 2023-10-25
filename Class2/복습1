@@ -1,0 +1,53 @@
+using System;
+using System.Runtime.InteropServices;
+
+class program
+{
+    static void Main(string[] args)
+    {
+        
+        
+                Console.WriteLine("이름을 입력하세요.");
+                string? name = Console.ReadLine();
+                Console.WriteLine("나이를 입력하세요.");
+                int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("반지름을 입력하세요.");
+                Double r = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"이름={name},나이={age},반지름={r}");
+        
+        int a = 10, b = 20;
+
+        Console.WriteLine(a + b);
+        Console.WriteLine(a - b);
+        Console.WriteLine(a * b);
+        Console.WriteLine(a / b);몫
+        Console.WriteLine(a % b);나머지
+
+        int a = 10;
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"++a = {++a}");
+        Console.WriteLine($"a++ = {a++}");
+        Console.WriteLine($"a = {a}");
+       
+        int a = 3, b = 2, c = 5;
+        int f, g, answer;
+        bool d, e, h, i, value;
+        value = false;
+
+        d = a <= b; //false
+        e = a != b; //true
+        f = a += b; //5
+        g = a %= b; //1
+        h = (a == b) && (b <= c);//false 
+        i = (a != b) || (b < c);//true
+        answer = value ? a : b;//2
+        Console.WriteLine(i);
+        
+
+
+
+    }
+}
+
+ 
+    
