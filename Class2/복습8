@@ -5,30 +5,26 @@ class program
 {
     static void Main(string[] args)
     {
-
-                for (int i = 0; i < 101 ; i++)
-                {
-                    if (i % 3 == 0 && i % 5 == 0)
-                    {
-                        Console.WriteLine("FizzBuzz");
-                    }
-                    else if (i % 3 ==0)
-                    {
-                        Console.WriteLine("Fizz");
-
-                    }
-                    else if (i % 5 == 0) 
-                    {
-                        Console.WriteLine("Buzz");
-
-                    }
-                    else
-                    {
-                        Console.WriteLine(i);
-                    }
-
-                }
-        
+       for (int i = 0; i < 101 ; i++)
+       {
+            if (i % 3 == 0 && i % 5 == 0)
+       {
+            Console.WriteLine("FizzBuzz");
+       }
+       else if (i % 3 ==0)
+       {
+             Console.WriteLine("Fizz");
+       }
+       else if (i % 5 == 0) 
+       {
+          Console.WriteLine("Buzz");
+       }
+       else
+       {
+            Console.WriteLine(i);
+       }
+       }
+        //===================================================================== 
         Console.WriteLine("N의 값을 입력하세요.");
         int n = Convert.ToInt32(Console.ReadLine());
         long fact = 0;
@@ -41,8 +37,6 @@ class program
             }
             Console.WriteLine($"{i}! -> {fact}");
         }
-
-
     }
 }
 
