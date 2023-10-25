@@ -3,26 +3,20 @@ class program
 {
     static void Main(string[] args)
     {
-
-                for (int i = 0; i < 5; i++)
-                {
-                    Console.WriteLine($"안녕 {i}번째 반복");
-                }
-        
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine($"안녕 {i}번째 반복");
+         }
         int sum = 0;
         for (int i = 0; i <= 100; i++)
         {
             if (i % 2 != 0)
             { sum = sum + i; }
-            
-            
         }
         Console.WriteLine(sum);
-        
-
+        //=====================================================================
         Console.WriteLine("숫자를 입력해라.");
         int num = Convert.ToInt32(Console.ReadLine());
-
         for (int i = 0; i < num; i++)
         {
             for (int i2 = 0; i2 < i; i2++)
@@ -31,8 +25,6 @@ class program
             }
             Console.WriteLine("*");
         }
-       
-
         for (int i = 2; i <= 9; i++)
         {
             Console.WriteLine($"====={i}단=====");
@@ -50,18 +42,12 @@ class program
         }
         for (int i = 1; i <= 9; i++)
         {
-
             for (int j = 2; j < 10; j++)
             {
-
                 Console.Write($"{j} X {i} = {i * j}\t");
             }
-
             Console.WriteLine();
-
         }
-
-
     }
 }
 
