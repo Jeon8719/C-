@@ -5,21 +5,19 @@ class program
 {
     static void Main(string[] args)
     {
-
         string[] names = { "C#", "ASP.NET" };
-        
-                int[] ages = { 20, 30, 22 };
-                int a = 100;
-                for (int i = 0; i < names.Length; i++)
-                {
-                    Console.WriteLine(names[i]);
-                }
+        int[] ages = { 20, 30, 22 };
+        int a = 100;
+        for (int i = 0; i < names.Length; i++)
+        {
+            Console.WriteLine(names[i]);
+        }
         
         foreach (string name in names)
         {
             Console.WriteLine(name);
         }
-        
+        //================================================================
         string[] a = { "사과", "배", "수박","바나나" };
         for (int i = 0; i < a.Length; i++)
         {
@@ -29,7 +27,7 @@ class program
         {
             Console.WriteLine(b);
         }
-        
+        //================================================================
         int a = 0;
         while (true)
         {
@@ -42,7 +40,7 @@ class program
 
         }
         Console.WriteLine("While 정지");
-
+        //================================================================
         for (int i = 1; i < 10; i++)
         {
             Console.WriteLine(i);
@@ -53,8 +51,7 @@ class program
             }
         }
         Console.WriteLine("for loop 정지");
-
-        
+        //================================================================
         Console.WriteLine("목표치를 입력하세요.");
         int n = Convert.ToInt32(Console.ReadLine());
         int a = 0;
@@ -68,12 +65,8 @@ class program
                 Console.WriteLine($"{1}부터{a}까지의 합은{b}이고, 목표치 {n}이상을 달성했습니다. ");
                 break;
             }
-
-
         }
-
-        
-
+        //================================================================
         for (int i = 1; i < 10; i++)
         {
             if(i % 5 == 0)
@@ -83,12 +76,10 @@ class program
 
             }
             Console.WriteLine(i);
-
         }
-        
+        //================================================================
         Console.WriteLine("시작");
         Start:
-
         Console.WriteLine("0,1,2 중 택1");
         int chapter = Convert.ToInt32(Console.ReadLine());
         if (chapter == 0)
@@ -118,8 +109,6 @@ class program
         {
             Console.WriteLine("종료한다.");
         }
-        */
-
 
     }
 }
