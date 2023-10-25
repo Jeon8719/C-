@@ -3,7 +3,6 @@ class program
 {
     static void Main(string[] args)
     {
-
                 Console.WriteLine("프로그램 언어를 입력하세요.");
                 string? n1 = Console.ReadLine();
                 if (n1 == "C#" || n1 == "c#")
@@ -14,22 +13,18 @@ class program
                     {
                         Console.WriteLine($"현재 프로그램은 {n1}, 버전은 {n2}\n" +
                             $"유니티가 지원하는 버전입니다.");
-
                     }
                     else
                     {
                         Console.WriteLine($"현재 프로그램은 {n1}, 버전은 {n2}\n" +
                             "유니티가 지원하지 않는 버전입니다.");
                     }
-
                 }
                 else
                 {
                     Console.WriteLine("지원하지 않는 언어입니다.");
 
                 }
-
-
     }
 }
 
