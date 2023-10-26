@@ -7,7 +7,7 @@ class program
         int data = Convert.ToInt32(Console.ReadLine());// data 변수에 들어갈 정수 입력
         if (data >= 90)
         {
-            Console.Write("수");ㅁ
+            Console.Write("수");
         }
         else if (data >= 80)
         {
