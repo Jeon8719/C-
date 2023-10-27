@@ -8,8 +8,8 @@
     public event EventHandler NameChanged;
 
     // 생성자 (Constructor)
-    public MyCustomer()ㅁ
-    {ㅁ
+    public MyCustomer()
+    {
         name = string.Empty;
         age = -1;
     }
