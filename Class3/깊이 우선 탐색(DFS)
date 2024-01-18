@@ -1,0 +1,38 @@
+    public void DFS(int now)
+        {
+            Console.WriteLine(now);
+            visited[now] = true; // now 방문
+
+            for (int next = 0; next < 6; next++)
+            {
+                if (adj[now, next] == 0) // 연결되어 있지 않은 노드 스킵
+                    continue;
+                if (visited[next]) // 이미 방문한 노드 스킵
+                    continue;
+                DFS(next);
+            }
+        } //행렬 형태의 그래프 탐색 함수
+
+        public void DFSList(int now)
+        {
+            Console.WriteLine(now);
+            visited[now] = true; // now 방문
+
+            foreach(int next in adj2[now])
+            {
+                if (visited[next]) // 이미 방문한 노드 스킵
+                    continue;
+                DFSList(next);
+            }
+        } //리스트 형태의 그래프 탐색 함수
+
+        public void SearchAll()
+        {
+            visited = new bool[6];
+            for(int now = 0; now < 6; now++)
+            {
+                if (visited[now] == false)
+                    DFS(now);
+            } 
+        } //그래프가 중간에 끊겨있을 경우를 대비해 모든 노드를 탐색하는 알고리즘
+    }
