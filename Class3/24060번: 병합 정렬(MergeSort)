@@ -1,4 +1,13 @@
-static void MergeSort(int[] arr, int p, int r)
+int count = 0;
+int[] NK = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+MergeSort(arr, 0, arr.Length - 1);
+if (count < NK[1])
+{
+    Console.WriteLine(-1);
+}
+
+void MergeSort(int[] arr, int p, int r)
 {
     if (p < r)
     {
@@ -9,12 +18,11 @@ static void MergeSort(int[] arr, int p, int r)
     }
 }
 
-static void Merge(int[] arr, int p, int q, int r)
+void Merge(int[] arr, int p, int q, int r)
 {
     int i, j, k;
     int n1 = q - p + 1;
     int n2 = r - q;
-
     int[] L = new int[n1];
     int[] R = new int[n2];
 
@@ -40,6 +48,13 @@ static void Merge(int[] arr, int p, int q, int r)
             arr[k] = R[j];
             j++;
         }
+
+        count++;
+        if (count == NK[1])
+        {
+            Console.WriteLine(arr[k]);
+            return; 
+        }
         k++;
     }
 
@@ -47,6 +62,13 @@ static void Merge(int[] arr, int p, int q, int r)
     {
         arr[k] = L[i];
         i++;
+
+        count++;
+        if (count == NK[1])
+        {
+            Console.WriteLine(arr[k]);
+            return; 
+        }
         k++;
     }
 
@@ -54,6 +76,13 @@ static void Merge(int[] arr, int p, int q, int r)
     {
         arr[k] = R[j];
         j++;
+
+        count++;
+        if (count == NK[1])
+        {
+            Console.WriteLine(arr[k]);
+            return; 
+        }
         k++;
     }
 }
