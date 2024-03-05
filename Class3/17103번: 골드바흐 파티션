@@ -1,4 +1,22 @@
-  static int CountGoldbachPartitions(int n)
+using System;
+using System.Text;
+
+class Program
+{
+    static void Main()
+    {
+        StringBuilder sb = new StringBuilder();
+        int count = int.Parse(Console.ReadLine());
+        for (int i = 0; i < count; i++)
+        {
+            int number = int.Parse(Console.ReadLine());
+            int result = CountGoldbachPartitions(number);
+            sb.AppendLine(result.ToString());
+        }
+        Console.WriteLine(sb.ToString());
+    }
+
+    static int CountGoldbachPartitions(int n)
     {
         // 에라토스테네스의 체로 n까지의 소수를 구함
         bool[] isPrime = new bool[n + 1];
@@ -54,3 +72,4 @@
 
         return count;
     }
+}
