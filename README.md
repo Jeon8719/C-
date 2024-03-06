@@ -4,14 +4,12 @@ C# 공부한 내용 필기 및 작업 코드 기록
 
 using System.Text;
 
-StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
+StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput())); 
 StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
 StringBuilder sb = new StringBuilder();
 
 sw.WriteLine(sb.ToString());
-
 sr.Close();
-
 sw.Close();
 
 
