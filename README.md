@@ -9,7 +9,9 @@ StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput(
 StringBuilder sb = new StringBuilder();
 
 sw.WriteLine(sb.ToString());
+
 sr.Close();
+
 sw.Close();
 
 
